@@ -13,9 +13,15 @@
 </head>
 <body>
 
-    <div class="d-flex min-vh-100">
+    <div class="app-shell">
 
-        <!-- Sidebar -->
+        <!-- Header (phone and tablet; hidden on desktop by style.css) -->
+        <header class="mobile-header">
+            <p class="mobile-header-label mb-1">Admin</p>
+            <h1 class="mobile-header-title mb-0">New Van</h1>
+        </header>
+
+        <!-- Sidebar (desktop only, hidden by style.css below 1281px) -->
         <aside class="sidebar flex-shrink-0 p-4">
             <a href="index.html" class="sidebar-brand text-white text-decoration-none">VanGo</a>
             <nav>
@@ -31,10 +37,10 @@
         <main class="main main-top flex-grow-1">
             <div class="content-wide mx-auto d-flex flex-column gap-4">
 
-                <!-- Heading -->
-                <div>
+                <!-- Heading (desktop only; phone and tablet use the header above) -->
+                <div class="custom-block">
                     <p class="text-muted-custom mb-1">Admin</p>
-                    <h1 class="page-title mb-0">New Account</h1>
+                    <h1 class="page-title mb-0">New Van</h1>
                 </div>
 
                 <!-- Form card -->
@@ -46,8 +52,8 @@
                     </div>
 
                     <div>
-                        <label for="dedicated-driver/operator" class="field-label">Dedicated Driver/Operator</label>
-                        <input type="text" id="dedicated-driver/operator" class="form-control input-vango" placeholder="Select an account">
+                        <label for="dedicated-driver-operator" class="field-label">Dedicated Driver/Operator</label>
+                        <input type="text" id="dedicated-driver-operator" class="form-control input-vango" placeholder="Select an account">
                     </div>
 
                 </div>
