@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VanGo | New Account</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="d-flex min-vh-100">
+
+        <!-- Sidebar -->
+        <aside class="sidebar flex-shrink-0 p-4">
+            <a href="index.html" class="sidebar-brand text-white text-decoration-none">VanGo</a>
+            <nav>
+                <ul class="nav flex-column mt-4">
+                    <li class="nav-item"><span class="nav-link px-0">Passenger</span></li>
+                    <li class="nav-item active"><span class="nav-link px-0">Admin</span></li>
+                    <li class="nav-item"><span class="nav-link px-0">Driver / Operator</span></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main content -->
+        <main class="main main-top flex-grow-1">
+            <div class="content-wide mx-auto d-flex flex-column gap-4">
+
+                <!-- Heading -->
+                <div>
+                    <p class="text-muted-custom mb-1">Admin</p>
+                    <h1 class="page-title mb-0">New Account</h1>
+                </div>
+
+                <!-- Form card -->
+                <div class="form-card">
+
+                    <div>
+                        <label for="full-name" class="field-label">Full name</label>
+                        <input type="text" id="full-name" class="form-control input-vango" placeholder="Juan Dela Cruz">
+                    </div>
+
+                    <div>
+                        <label for="username" class="field-label">Username</label>
+                        <input type="text" id="username" class="form-control input-vango" placeholder="juan.dc">
+                    </div>
+
+                    <div>
+                        <label for="password" class="field-label">Temporary password</label>
+                        <input type="password" id="password" class="form-control input-vango" placeholder="••••••••">
+                    </div>
+
+                    <div>
+                        <span class="field-label">Role</span>
+                        <div class="role-toggle">
+                            <input type="radio" class="btn-check" name="role" id="role-driver" value="driver" checked>
+                            <label class="role-option" for="role-driver">Driver</label>
+
+                            <input type="radio" class="btn-check" name="role" id="role-operator" value="operator">
+                            <label class="role-option" for="role-operator">Operator</label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a href="menu.html" class="btn btn-vango-primary w-100">Save account</a>
+
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>
