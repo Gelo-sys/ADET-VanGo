@@ -140,46 +140,23 @@ body {
 
 /* ---------- Desktop (1281px and up) ---------- */
 @media (min-width: 1281px) {
-    .app-shell {
-        flex-direction: row;
-    }
 
+    /* Header */
     .mobile-header {
-        display: none;
-    }
-
-    /* Sidebar */
-    .sidebar {
-        width: 15rem; /* 240px */
+        padding: 2.5rem 1.25rem 2rem;
         background-color: var(--navy);
-        border-right: 4px solid var(--yellow);
+        border-bottom: 6px solid var(--yellow);
+        color: #fff;
     }
 
-    .sidebar-brand {
-        display: block;
-        font-size: 1.75rem;
+    .mobile-header-label {
+        font-size: 0.75rem;
+        line-height: 1.2;
+    }
+
+    .mobile-header-title {
+        font-size: 1.25rem;
         font-weight: 800;
-    }.btn-check:checked + .role-option {
-    background-color: #fff;
-    color: var(--navy);
-}
-
-.btn-check:focus-visible + .role-option {
-    outline: 2px solid var(--navy);
-    outline-offset: 2px;
-}
-
-    .sidebar .nav-link {
-        color: var(--nav-text);
-        font-size: 1.125rem;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        cursor: default;
-    }
-
-    .sidebar .nav-item.active .nav-link {
-        color: var(--yellow);
-        font-weight: 700;
     }
 
     /* Main */
@@ -255,9 +232,6 @@ body {
 
 /* ---------- Tablet and phone (1280px and down) ---------- */
 @media (max-width: 1280px) {
-    .sidebar {
-        display: none;
-    }
 
     /* The mobile header replaces the page heading here */
     .custom-block {
@@ -285,19 +259,28 @@ body {
 
     /* Van list (plain, no card) */
     .van-list {
-        padding: 0.3125rem 1rem 0.875rem;
+        background-color: #fff;
+        border: 1px solid #e5e7eb;
+        border-radius: 0.75rem;
+        overflow: hidden;
     }
 
     .van-row {
-        padding: 0.6875rem 0;
+        padding: 1rem 1.5rem;
     }
 
+        .van-row + .van-row {
+            border-top: 1px solid #e5e7eb;
+        }
+
     .van-plate {
-        font-size: 0.875rem;
+        font-size: 1rem;
+        font-weight: 700;
+        color: #1a1f2b;
     }
 
     .van-row .text-muted-custom {
-        font-size: 0.75rem;
+        font-size: 1rem;
     }
 
     /* Header */
